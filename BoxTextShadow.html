@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Box Shadow and text padding</title>
+    <style>
+      .container {
+        display: flex;
+      }
+      .card {
+        margin: 25px 13px;
+        padding: 23px 11px;
+        /* border: 2px solid green; */
+        border-radius: 10px;
+        background-color: rgb(196, 167, 167);
+        /* box-shadow: offset-x offset-y color; */
+        /* box-shadow: 10px 10px rgb(164, 137, 29); */
+        /* ... */
+        /* box-shadow: offset-x offset-y blur-radius spread-radius color; */
+        box-shadow: 7px 6px 20px 5px rgb(164, 137, 29, 0.5);
+        /* box-shadow: inset 7px 8px greenyellow; */
+        /* box-shadow: 8px 8px greenyellow, 10px 10px red; */
+      }
+      .card h2 {
+        text-shadow: -12px -9px 2px gray;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="card" id="car-1">
+        <h2>This is C++ course</h2>
+        <p>
+          Add karne ke liye likh raha hoon isliye bas likhte jaa raha hoon aur
+          bhi add kar deta hoon hmmm bohut add kar chuka Lorem ipsum dolor sit
+          amet consectetur adipisicing elit. Corrupti temporibus obcaecati
+          incidunt unde, dolorum vitae doloribus voluptates, assumenda impedit
+          qui officiis, fugit nihil earum porro optio! Maiores vero distinctio
+          nostrum, velit iusto sed suscipit?
+        </p>
+      </div>
+      <div class="card" id="car-2">
+        <h2>This is HTML course</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti
+          temporibus obcaecati incidunt unde, dolorum vitae doloribus
+          voluptates, assumenda impedit qui officiis, fugit nihil earum porro
+          optio! Maiores vero distinctio nostrum, velit iusto sed suscipit?
+        </p>
+      </div>
+      <div class="card" id="car-3">
+        <h2>Card3</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti
+          temporibus obcaecati incidunt unde, dolorum vitae doloribus
+        </p>
+      </div>
+    </div>
+  </body>
+</html>
